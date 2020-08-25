@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  
+  
+  
+  
+  <style>
+
+    .table{
+
+margin-left: 50px;
+}
+
+.head{
+  width:250px;
+  margin-left: 50px;
+}
+
+.head2{
+  width:250px;
+}
+
+
+.head3{
+  width:100px;
+  margin-left: 50px;
+}
+
+
+
+
+
+    
+button{
+  border-color: black;
+  background-color: blue;
+}
+    body{
+      background:url("https://res.cloudinary.com/dsph4eptm/image/upload/c_scale,w_1586/v1598347787/253332_wk6s70.jpg");
+    }
+    .success, .error {
+      color: white;
+      padding: 5px;
+      margin: 5px 0 15px 0;
+    }
+
+    .success {
+      background: green;
+    }
+
+    .container{
+     
+     background:url("https://res.cloudinary.com/dsph4eptm/image/upload/v1598350257/paperboard-texture_95678-72_vtmmfg.jpg");
+     padding:20px;
+     border-radius: 25px;
+    }
+
+    .error {
+      background: red;
+    }
+  </style>
+
+
+
+  <title>Book List</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Library Management Tool</h1>
+    <form id="book-form">
+      <div>
+        <label for="title">Title</label>
+        <input type="text" id="title" class="u-full-width">
+      </div>
+      <div>
+        <label for="author">Author</label>
+        <input type="text" id="author" class="u-full-width">
+      </div>
+      <div>
+        <label for="isbn">ISBN#</label>
+        <input type="text" id="isbn" class="u-full-width">
+      </div>
+      <div>
+        <input type="submit" value="Submit" class="u-full-width">
+      </div>
+    </form>
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="head">Title</th>
+          <th class="head2">Author</th>
+          <th class="head3">ISBN</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list"></tbody>
+    </table>
+  </div>
+
+  <script src="es6.js"></script>
+</body>
+</html>
